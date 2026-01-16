@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <h1>Task Manager</h1>
+        <p>Organize your daily tasks</p>
+    </header>
+
+    <main>
+        <section class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter a task">
+            <button id="addTaskBtn">Add Task</button>
+        </section>
+
+     <section class="filters">
+    <button data-filter="all" class="filter-all active">All</button>
+    <button data-filter="completed" class="filter-completed">Completed</button>
+    <button data-filter="pending" class="filter-pending">Pending</button>
+</section>
+
+
+        <!-- Error message -->
+        <p id="errorMessage" class="error"></p>
+
+        <!-- Loading indicator -->
+        <p id="loading" style="display:none; text-align:center;">Loading tasks...</p>
+
+        <section>
+            <ul id="taskList"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
